@@ -1,27 +1,31 @@
 {
-    "name": "libmime",
+    "name": "@kenjiuno/mimelib-with-iso2022jp",
     "description": "Encode and decode quoted printable and base64 strings",
-    "version": "4.0.1",
+    "version": "0.1.0",
     "main": "lib/libmime",
-    "homepage": "https://github.com/andris9/libmime",
+    "homepage": "https://github.com/HiraokaHyperTools/libmime",
     "repository": {
         "type": "git",
-        "url": "git://github.com/andris9/libmime.git"
+        "url": "git://github.com/HiraokaHyperTools/libmime.git#mimelib-with-iso2022jp"
     },
     "license": "MIT",
-    "keywords": ["MIME", "Base64", "Quoted-Printable"],
-    "author": "Andris Reinman <andris@kreata.ee>",
+    "keywords": [
+        "MIME",
+        "Base64",
+        "Quoted-Printable"
+    ],
+    "author": "Original developer Andris Reinman <andris@kreata.ee>, forked by kenjiuno",
     "scripts": {
         "test": "grunt"
     },
     "dependencies": {
-        "iconv-lite": "0.4.23",
+        "@kenjiuno/iconvlite-wrapper-with-iso2022jp": "0.1.0",
         "libbase64": "1.0.3",
         "libqp": "1.1.0"
     },
     "devDependencies": {
-        "eslint-config-nodemailer": "^1.2.0",
         "chai": "^4.1.2",
+        "eslint-config-nodemailer": "^1.2.0",
         "grunt": "^1.0.3",
         "grunt-cli": "^1.2.0",
         "grunt-eslint": "^21.0.0",
